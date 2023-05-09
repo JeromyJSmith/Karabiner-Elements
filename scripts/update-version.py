@@ -45,5 +45,5 @@ with top_directory.joinpath('version').open() as version_file:
 
         if needs_update:
             with replaced_file_path.open('w') as replaced_file:
-                print("Update " + str(replaced_file_path))
+                print(f"Update {str(replaced_file_path)}")
                 replaced_file.write(''.join(replaced_lines))
